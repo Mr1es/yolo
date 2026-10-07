@@ -1,1 +1,6 @@
-runs/
+runs/__pycache__/
+*.pyc
+dataset/labels/*.cache
+.vscode/
+yolov8n.pt
+weights/

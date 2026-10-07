@@ -1,6 +1,7 @@
 # YOLO 数据集配置
 
-path: dataset
+# 使用绝对路径，避免 ultralytics 把相对路径解析到全局 datasets 目录
+path: C:/Users/28687/Desktop/X/yolo_train/dataset
 
 train: images/train
 val: images/val

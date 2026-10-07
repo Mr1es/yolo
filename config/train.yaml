@@ -19,15 +19,16 @@ imgsz: 640
 # - 值越小: 显存占用小，但训练可能不稳定
 # - 建议: 根据 GPU 显存调整，尽可能大
 # - 参考: 6GB 显存约 batch=4-8, 12GB 约 batch=16-32
-batch: 2
+batch: 10
 
 
 # 保存根目录
 # 所有实验结果保存在此目录下
-project: runs/train
+# 保存根目录（绝对路径，确保结果保存在本仓库的 runs/train 下）
+project: C:/Users/28687/Desktop/X/yolo_train/runs/train
 
 # 实验名称
 # - 最终保存路径: {project}/{name}/
 # - 内容包括: weights/, results.csv, 混淆矩阵等
 # - 建议用有意义的名称如: yolov12n_100epochs, smoke_det_v1
-name: exp
+name: yolotraning_gpu
