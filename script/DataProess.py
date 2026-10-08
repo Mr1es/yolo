@@ -7,12 +7,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
 
-INPUT_DIR = SCRIPT_DIR / '../your_data'   # 源数据（放你的图片和json的地方，全复制到这，注意先运行json2txt.py）
+INPUT_DIR = SCRIPT_DIR / '../yolo_milkdata'   # 源数据（放你的图片和json的地方，全复制到这，注意先运行json2txt.py）
 OUTPUT_DIR = SCRIPT_DIR / '../dataset'   # 输出目录（自动划分）
 
 # 改这里的比例
 VAL_RATE = 0.3   # 验证集占比
-TEST_RATE = 0.1  # 测试集占比
+TEST_RATE = 0.0  # 测试集占比
 SEED = 0         # 随机种子
 
 def main():

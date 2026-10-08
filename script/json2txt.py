@@ -5,11 +5,11 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
 
-INPUT_DIR = SCRIPT_DIR / '../your_data'  # JSON 文件所在目录
+INPUT_DIR = SCRIPT_DIR / '../yolo_milkdata'  # JSON 文件所在目录
 # 输出 TXT 保存在同目录
 
 # 类别映射（改成你自己的类别列表，顺序决定 class_id）
-CLASSES = ['cat', 'dog']
+CLASSES = ['RYmilk', 'MNmilk']
 
 def json_to_yolo(json_path: Path):
     """转换单个 JSON 文件"""

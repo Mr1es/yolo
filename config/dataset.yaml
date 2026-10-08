@@ -10,8 +10,8 @@ test: images/test
 # 类别信息
 nc: 2  # 类别数量
 names:
-  0: cat
-  1: dog
+  0: RYmilk
+  1: MNmilk
 
 # 目录结构
 # datasets/my_dataset/
