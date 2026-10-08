@@ -123,6 +123,13 @@ yolo_ort.exe --model models\milk_640.onnx --source 0 --show --conf 0.3
 
 > ONNX Runtime 比 OpenCV DNN 快约 2.2 倍；未启用 CUDA（本机无 CUDA Toolkit）。
 
+### 实测效果（C++ 部署 / 摄像头实时）
+
+![摄像头实时识别 RYmilk](docs/demo_rymilk.jpg)
+
+画面信息：左上角 HUD 显示 **FPS 6.4、objects 1**，蓝框为模型输出 —— **RYmilk 置信度 0.76**（640 版本模型）。
+框与 HUD 均由 `yolo_cpp/main.cpp` 绘制，便于实时观察帧率与检测数量。
+
 ## 五、遇到的问题与解决方式
 
 | # | 问题 | 原因 | 解决 |
